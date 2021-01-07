@@ -1,0 +1,68 @@
+@import url("https://fonts.googleapis.com/css2?family=Acme&display=swap");
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(to right, rgb(255, 167, 35), rgb(255, 97, 35));
+  font-family: "Acme", "Segoe UI", Tahoma, Verdana, sans-serif;
+}
+
+.container {
+  display: block;
+  margin: 0 auto;
+  width: 550px;
+}
+
+header {
+  background-color: wheat;
+  border-radius: 8px 8px 0 0;
+}
+
+header h1 {
+  margin: 0;
+  padding: 15px;
+  padding-left: 70px;
+  font-weight: bold;
+  font-size: 2.5rem;
+}
+
+header img {
+  float: right;
+  margin-top: -50px;
+  margin-right: 10px;
+  box-shadow: 0 5px 20px black;
+}
+
+main {
+  background-color: white;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 10px;
+  color: rgb(7, 65, 7);
+}
+main h2 {
+  margin: 0;
+  font-weight: 300;
+}
+main ul {
+  margin: 0;
+}
+
+footer {
+  background-color: wheat;
+  padding: 10px;
+  border-radius: 0 0 8px 8px;
+  text-align: center;
+  font-size: small;
+}
+footer p {
+  margin: 0;
+}
+footer a {
+  color: black;
+}
+
+.date {
+  color: rgb(75, 56, 196);
+}
