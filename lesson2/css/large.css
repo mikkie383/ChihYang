@@ -1,0 +1,17 @@
+@media only screen and (min-width: 60em) {
+  header h1 {
+    word-spacing: 10px;
+  }
+  main {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .tesla {
+    grid-column: 1/2;
+  }
+  .jp {
+    grid-column: 2/3;
+  }
+  .att {
+    grid-column-gap: 3/4;
+  }
+}
