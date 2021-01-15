@@ -12,6 +12,6 @@
     grid-column: 2/3;
   }
   .att {
-    grid-column-gap: 3/4;
+    grid-column: 3/4;
   }
 }
