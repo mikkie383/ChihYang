@@ -1,0 +1,100 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(to right, rgb(255, 167, 35), rgb(255, 97, 35));
+  font-family: "Acme", sans-serif;
+}
+
+.content {
+  margin: 0 auto;
+  max-width: 960px;
+}
+.siteName:before {
+  color: rgb(76, 129, 22);
+  content: "WEA";
+  letter-spacing: 4px;
+}
+
+header {
+  display: flex;
+  font-size: 1.7rem;
+  align-items: center;
+  justify-content: center;
+}
+
+nav {
+  background-color: wheat;
+  text-align: center;
+}
+
+nav ul {
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+  align-items: center;
+}
+nav ul li {
+  flex: 1 1 100%;
+}
+nav ul li a {
+  display: block;
+  text-decoration: none;
+  font-size: 1.5rem;
+  padding: 0.75rem;
+}
+
+nav a:hover {
+  background-color: #bbb;
+  color: #36454f;
+}
+
+header img {
+  max-width: 7%;
+}
+
+main img {
+  max-width: 20%;
+}
+
+header,
+footer {
+  background-color: wheat;
+}
+
+footer {
+  text-align: center;
+  padding: 0.75rem;
+}
+
+.color {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  text-align: center;
+  box-shadow: 0 0 3px #e7e5e5;
+}
+
+.color li {
+  flex: 1 1 100%;
+  padding-top: 200px;
+  padding-bottom: 10px;
+}
+
+.wheat {
+  background-color: wheat;
+}
+.yellow {
+  background-color: #ffa723;
+}
+.orange {
+  background-color: #ff6123;
+}
+.green {
+  background-color: #4c8116;
+}
+.black {
+  background-color: #000000;
+  color: white;
+}
