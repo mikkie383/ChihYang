@@ -1,0 +1,25 @@
+@media only screen and (min-width: 32.5em) {
+  .logo {
+    font-size: 1.3rem;
+  }
+
+  nav ul li a {
+    font-size: 1.2rem;
+  }
+  .yellow {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    background-color: #ffa723;
+  }
+  .green {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    background-color: #4c8116;
+    color: white;
+  }
+  .smallView {
+    display: revert;
+  }
+}
