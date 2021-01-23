@@ -3,9 +3,6 @@
     font-size: 1.3rem;
   }
 
-  nav ul li a {
-    font-size: 1.2rem;
-  }
   .yellow {
     display: flex;
     text-align: center;
@@ -21,5 +18,11 @@
   }
   .smallView {
     display: revert;
+  }
+  nav ul {
+    display: flex;
+  }
+  nav ul li {
+    flex: 1 1 100%;
   }
 }
