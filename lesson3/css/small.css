@@ -78,7 +78,7 @@ footer {
 
 .color li {
   flex: 1 1 100%;
-  padding-top: 200px;
+  padding-top: 250px;
   padding-bottom: 10px;
 }
 
@@ -93,8 +93,22 @@ footer {
 }
 .green {
   background-color: #4c8116;
+  color: white;
 }
 .black {
   background-color: #000000;
   color: white;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+td,
+th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
 }
