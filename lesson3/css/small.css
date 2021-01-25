@@ -53,6 +53,7 @@ header img {
 }
 main {
   font-family: "Open Sans", sans-serif;
+  padding: 15px;
 }
 main img {
   max-width: 20%;
