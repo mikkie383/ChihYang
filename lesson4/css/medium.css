@@ -1,6 +1,7 @@
 @media only screen and (min-width: 35em) {
   .logo {
     font-size: 1.3rem;
+    padding-left: 18%;
   }
   nav ul {
     display: flex;

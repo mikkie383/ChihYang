@@ -2,4 +2,8 @@
   .logo {
     font-size: 1.7rem;
   }
+  nav {
+    padding-left: 17%;
+    padding-right: 17%;
+  }
 }

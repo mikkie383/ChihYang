@@ -19,14 +19,11 @@ body {
   background: linear-gradient(to right, rgb(255, 167, 35), rgb(255, 97, 35));
   display: flex;
   align-items: center;
-  padding-left: 280px;
 }
 
 nav {
   background-color: wheat;
   text-align: center;
-  padding-left: 280px;
-  padding-right: 280px;
   margin: 0 auto;
 }
 
@@ -91,10 +88,7 @@ footer {
 .map {
   background: linear-gradient(to right, rgb(255, 167, 35), rgb(255, 97, 35));
   display: flex;
-  padding-left: 280px;
-  padding-right: 280px;
-  padding-top: 15px;
-  padding-bottom: 15px;
+  padding: 10px;
   justify-content: space-around;
 }
 
@@ -105,4 +99,10 @@ footer {
 
 p {
   font-size: 1.2rem;
+  padding-left: 10px;
+}
+h3 {
+  padding-left: 10px;
+}
+.volunteer-info {
 }
