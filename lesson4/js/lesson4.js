@@ -1,10 +1,11 @@
 const year = document.querySelector('.year');
 const time = document.querySelector('.date');
+var options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
 
 const date = new Date();
 
 year.textContent = date.getFullYear();
-time.innerHTML = `Last Updated: ${document.lastModified}`;
+time.innerHTML = `Last Updated: ${date.toLocaleDateString("en-AU", options)}`;
 
 const hamButton = document.querySelector('.ham');
 const mainMenu = document.querySelector('.navigation');
