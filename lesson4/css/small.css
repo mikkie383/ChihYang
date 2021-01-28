@@ -1,0 +1,108 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Acme", sans-serif;
+}
+
+.content {
+  margin: 0 auto;
+}
+.siteName:before {
+  color: rgb(76, 129, 22);
+  content: "WEA";
+  letter-spacing: 4px;
+}
+
+.logo {
+  background: linear-gradient(to right, rgb(255, 167, 35), rgb(255, 97, 35));
+  display: flex;
+  align-items: center;
+  padding-left: 280px;
+}
+
+nav {
+  background-color: wheat;
+  text-align: center;
+  padding-left: 280px;
+  padding-right: 280px;
+  margin: 0 auto;
+}
+
+.navigation li:first-child {
+  display: block;
+}
+
+nav li {
+  display: none;
+}
+
+.responsive li {
+  display: block;
+}
+
+nav ul {
+  display: block;
+  list-style-type: none;
+  padding: 0;
+  align-items: center;
+  margin: 0;
+}
+
+nav ul li a {
+  display: block;
+  font-size: 1.5rem;
+  text-decoration: none;
+  padding: 0.75rem;
+  color: rgb(76, 129, 22);
+}
+
+nav a:hover {
+  background-color: #bbb;
+  color: #36454f;
+}
+
+header img {
+  max-width: 7%;
+}
+main {
+  font-family: "Open Sans", sans-serif;
+  max-width: 960px;
+  margin: 0 auto;
+}
+.townName {
+  padding-left: 10px;
+}
+.banner-box {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.banner-box img {
+  width: 100%;
+  grid-column: 1 / -1;
+}
+.logo,
+footer {
+  background-color: wheat;
+  font-family: "Acme", sans-serif;
+}
+
+.map {
+  background: linear-gradient(to right, rgb(255, 167, 35), rgb(255, 97, 35));
+  display: flex;
+  padding-left: 280px;
+  padding-right: 280px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  justify-content: space-around;
+}
+
+footer {
+  text-align: center;
+  padding: 0.75rem;
+}
+
+p {
+  font-size: 1.2rem;
+}
