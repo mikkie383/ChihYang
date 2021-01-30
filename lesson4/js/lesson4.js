@@ -9,13 +9,20 @@ time.innerHTML = `Last Updated: ${date.toLocaleDateString("en-AU", options)}`;
 
 const hamButton = document.querySelector('.ham');
 const mainMenu = document.querySelector('.navigation');
+const menu = document.getElementById('menu');
 
 hamButton.addEventListener('click', () =>{
     mainMenu.classList.toggle('responsive')
 }, false);
 
+menu.addEventListener('click', () =>{
+    mainMenu.classList.toggle('responsive')
+}, false);
+
 window.onresize = () => {
     if(window.innerWidth > 760){
+        
         mainMenu.classList.remove('responsive');
+        
     }
 };

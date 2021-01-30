@@ -4,6 +4,7 @@
 
 body {
   font-family: "Acme", sans-serif;
+  /*background-image: url(../images/01d.png);*/
 }
 
 .content {
@@ -14,11 +15,25 @@ body {
   content: "WEA";
   letter-spacing: 4px;
 }
+.siteName {
+  margin-top: 1.3rem;
+}
+.siteNameMotto {
+  margin: 1rem 0;
+}
+
+.siteNameMotto p {
+  display: none;
+}
 
 .logo {
   background: linear-gradient(to right, rgb(255, 167, 35), rgb(255, 97, 35));
   display: flex;
   align-items: center;
+  padding-left: 5%;
+}
+.logo img {
+  max-width: 9%;
 }
 
 nav {
@@ -28,7 +43,7 @@ nav {
 }
 
 .navigation li:first-child {
-  display: block;
+  display: none;
 }
 
 nav li {
@@ -67,6 +82,7 @@ main {
   font-family: "Open Sans", sans-serif;
   max-width: 960px;
   margin: 0 auto;
+  margin-bottom: 20px;
 }
 .townName {
   padding-left: 10px;
@@ -87,7 +103,7 @@ footer {
 
 .map {
   background: linear-gradient(to right, rgb(255, 167, 35), rgb(255, 97, 35));
-  display: flex;
+  display: block;
   padding: 10px;
   justify-content: space-around;
 }
@@ -101,8 +117,48 @@ p {
   font-size: 1.2rem;
   padding-left: 10px;
 }
-h3 {
+main h3 {
   padding-left: 10px;
 }
+
+.forecast-info {
+  background-color: #d2cfcf;
+  height: 200px;
+  margin-bottom: 20px;
+}
 .volunteer-info {
+  background-color: #d2cfcf;
+  height: 200px;
+  padding-top: 5px;
+}
+
+iframe {
+  width: 100%;
+}
+
+button {
+  display: block;
+  background-color: transparent;
+  position: absolute;
+  left: 80%;
+  font-size: 1.5rem;
+}
+.location,
+.phone,
+.email {
+  display: flex;
+}
+.location img,
+.phone img,
+.email img {
+  max-width: 10%;
+  margin-bottom: 0.8rem;
+}
+.location p,
+.phone p,
+.email p {
+  margin: 0;
+}
+.social img {
+  margin-right: 0.8rem;
 }
