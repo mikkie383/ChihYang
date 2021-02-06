@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Website Planning Document (1) - Preston Page">
+    <meta name="description" content="Website Planning Document (2) - Preston Page">
     <title>Wealunteer-Home</title>
     <link rel="shortcut icon" href="../images/fav.ico">
     <link href="https://fonts.googleapis.com/css2?family=Acme&family=Open+Sans:wght@300&display=swap" rel="stylesheet">
@@ -14,19 +14,19 @@
 </head>
 <body>
     <div class="content">
+        <div id="pancake"><p>**Saturday = Preston Pancakes in the Park!  9:00 a.m. Saturday at the city park pavilion.**</p></div>
         <header class="logo">
             <img src="images/growth_plant.png" alt="WEAlunteer logo">
             <div class="siteNameMotto">
                 <h1 class="siteName">lunteer</h1>
                 <p>Weather you like it or not, Volunteer now!</p>
             </div>
-            <button id="menu">&#9776;</button>
         </header>
         <nav>
             <ul class="navigation">
-                <li><a class="ham" href="#">&#9776;</a></li>
+                <li><a class="ham" href="#">&#9776;Menu</a></li>
                 <li><a href="#">Home</a></li>
-                <li><a href="preston-4.html">Preston</a></li>
+                <li><a class="active" href="preston-5.html">Preston</a></li>
                 <li><a href="#">Soda Springs</a></li>
                 <li><a href="#">Fish Haven</a></li>
                 <li><a href="#">Storm Center</a></li>
@@ -36,20 +36,45 @@
         <main>
             <h2 class="townName">Preston Idaho</h2>
             <div class="banner-box">
-                <img src="images/banner.jpg" alt="Picture of Preston" height="300">
-                <div class="weather-info"></div>
+                <img src="images/hero.jpg" alt="Picture of Preston">
+                <div class="weather-info">
+                    <h3>Weather Summary</h3>
+                    <hr>
+                    <p><strong>Currently: </strong><span class="desc">Cloud</span></p>
+                    <p><strong>High: </strong><span class="temp">10</span>°F</p>
+                    <p><strong>Wind Chill: </strong><span class="windChill"></span></p>
+                    <p><strong>Humidity: </strong><span class="hum"></span></p>
+                    <p><strong>Wind Speed: </strong><span class="windSpeed"></span></p>
+                </div>
             </div>
             <h3>Five Day Forecast</h3>
             <div class="forecast-info">
-                <div class="future 1"></div>
-                <div class="future 2"></div>
-                <div class="future 3"></div>
-                <div class="future 4"></div>
-                <div class="future 5"></div>
+                <div class="day"><p class="day1">day1</p>
+                    <div class="weather-icon1"><img src="images/01d.png" alt="forcast"></div>
+                    <div class="forecast-temp one">45°F</div>
+                </div>
+                <div class="day"><p class="day2">day2</p>
+                    <div class="weather-icon2"><img src="images/01d.png" alt="forcast"></div>
+                    <div class="forecast-temp two">41°F</div>
+                </div>
+                <div class="day"><p class="day3">day3</p>
+                    <div class="weather-icon3"><img src="images/01d.png" alt="forcast"></div>
+                    <div class="forecast-temp three">40°F</div>
+                </div>
+                <div class="day"><p class="day4">day4</p>
+                    <div class="weather-icon4"><img src="images/01d.png" alt="forcast"></div>
+                    <div class="forecast-temp four">44°F</div>
+                </div>
+                <div class="day"><p class="day5">day5</p>
+                    <div class="weather-icon5"><img src="images/01d.png" alt="forcast"></div>
+                    <div class="forecast-temp five">46°F</div>
+                </div>
             </div>
             <section class="volunteer-info">
                 <h3>Volunteer Post</h3>
+                <img src="images/volunteer.jpg" alt="volunteer pic">
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cum consequuntur ea harum eum maiores vel similique fuga architecto aspernatur, tempore veniam est, commodi minus molestias, sed cumque iusto earum. Necessitatibus.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates culpa quis nobis dicta sed voluptas. Eos fugit hic facere quam maiores suscipit, illo ratione eveniet, mollitia et, sint repellendus eaque?</p>
             </section>
         </main>
 
@@ -83,6 +108,6 @@
                 <div class="date"></div>
         </footer>
     </div>
-    <script src="js/lesson4.js"></script>
+    <script src="js/lesson5.js"></script>
 </body>
 </html>
