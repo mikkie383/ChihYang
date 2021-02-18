@@ -6,12 +6,18 @@
     padding-left: 17%;
     padding-right: 17%;
   }
+  nav ul li a {
+    font-size: 1.5rem;
+  }
   .gallery-container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
   }
   picture {
-    box-shadow: 5px 10px 18px #888888;
+    box-shadow: 5px 10px 18px #b3b2b2;
+  }
+  picture:hover {
+    box-shadow: 5px 10px 18px #6b6b6b;
   }
   .gallery-container p {
     display: revert;
