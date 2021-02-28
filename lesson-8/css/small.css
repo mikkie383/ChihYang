@@ -133,7 +133,6 @@ label {
 }
 
 .slider::-webkit-slider-thumb {
-  -webkit-appearance: none;
   appearance: none;
   width: 25px;
   height: 25px;
@@ -142,13 +141,6 @@ label {
   cursor: pointer;
 }
 
-.slider::-moz-range-thumb {
-  width: 25px;
-  height: 25px;
-  border-radius: 50%;
-  background: rgb(76, 129, 22);
-  cursor: pointer;
-}
 .btm {
   display: block;
   margin: 2% auto;
