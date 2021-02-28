@@ -32,7 +32,43 @@
             </ul>
         </nav>
         <main>
-           
+            <form action="thanks.html" method="get">
+                <fieldset>
+                    <legend>Contact Info</legend>
+                    <label for="fname" class="txt">Full name*: <input type="text" id="fname" name="fname" required pattern="[A-Za-z]{5,}"></label>
+                    <label for="email" class="txt">Email: <input type="email" id="email" name="email" placeholder="smi21003@byui.edu"></label>
+                    <label for="phine" class="txt">Phone number*: <input type="tel" id="phone" name="phone" required></label>
+                    <label for="zip" class="txt">Zip code*: <input type="number" id="zip" name="zip" required></label>
+                </fieldset>
+                <fieldset>
+                    <legend>Storm Info</legend>
+                    <label for="stormDate" class="txt">Storm date: <input type="date" name="stormDate" id="stormDate"></label>
+                    <label for="stormType" class="txt">Storm type: <input list="stormTypes" name="stormType" id="stormType"></label>
+                    <datalist id="stormTypes">
+                        <option value="Flash Flood"></option>
+                        <option value="Hail"></option>
+                        <option value="Hurricane"></option>
+                        <option value="Thunderstorm"></option>
+                        <option value="Tornado"></option>
+                    </datalist>
+                    <label for="stormSeverity" class="txt">Storm severity: <span id="value"></span> <input type="range" min="1" max="10" value="5" class="slider" id="Range"></label>
+                    <label for="stormRegion" class="txt">Storm region: 
+                    <select name="stormRegion" id="storm-region">
+                        <option value="" selected disabled>Select Region ...</option>
+                        <option value="preston">Preston</option>
+                        <option value="soda">Soda Springs</option>
+                        <option value="fish">Fish Haven</option>
+                    </select></label>
+                    <label for="indangerLevel" class="txt">User in-danger level:</label>
+                    <label for="yes"></label><input type="radio" name="dangerlevel" id="yes" value="yes"> yes</label>
+                    <label for="maybe"></label><input type="radio" name="dangerlevel" id="maybe" value="maybe"> maybe</label>
+                    <label for="no"></label><input type="radio" name="dangerlevel" id="no" value="no"> no</label>
+                    
+                    <label for="extra-info" class="txt">Additional information or comments:
+                    <textarea name="extra-info" id="" cols="30" rows="10"></textarea></label>
+                </fieldset>
+                <input class="btm" type="submit" value="Report Storm">
+            </form>
             
         </main>
 
@@ -44,6 +80,6 @@
         </footer>
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
-    <script src="js/lesson7.js"></script>
+    <script src="js/lesson8.js"></script>
 </body>
 </html>
