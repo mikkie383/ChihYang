@@ -107,15 +107,16 @@ fieldset legend {
 }
 .col-25 {
   float: left;
-  width: 25%;
   padding: 1%;
-  margin-top: 2%;
 }
 .col-75 {
   float: left;
-  width: 75%;
   padding: 1%;
-  margin-top: 2%;
+}
+.col-25,
+.col-75 {
+  width: 100%;
+  margin-top: 0;
 }
 label {
   padding: 12px 12px 12px 0;

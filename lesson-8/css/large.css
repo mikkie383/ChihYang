@@ -16,4 +16,12 @@
   picture:hover {
     box-shadow: 5px 10px 18px #6b6b6b;
   }
+  .col-25 {
+    width: 25%;
+    margin-top: 2%;
+  }
+  .col-75 {
+    width: 75%;
+    margin-top: 2%;
+  }
 }
