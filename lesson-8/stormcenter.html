@@ -35,15 +35,45 @@
             <form action="thanks.html" method="get">
                 <fieldset>
                     <legend>Contact Info</legend>
-                    <label for="fname" class="txt">Full name*: <input type="text" id="fname" name="fname" required pattern="[A-Za-z]{5,}"></label>
-                    <label for="email" class="txt">Email: <input type="email" id="email" name="email" placeholder="smi21003@byui.edu"></label>
-                    <label for="phine" class="txt">Phone number*: <input type="tel" id="phone" name="phone" required></label>
-                    <label for="zip" class="txt">Zip code*: <input type="number" id="zip" name="zip" required></label>
+                    <div class="col-25">
+                        <label for="fname" class="inline">Full name*: </label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" id="fname" name="fname" required pattern="[A-Za-z]{5,}">
+                    </div>
+                    <div class="col-25">
+                        <label for="email" class="inline">Email: </label>
+                    </div>
+                    <div class="col-75">
+                        <input type="email" id="email" name="email" placeholder="smi21003@byui.edu">
+                    </div>
+                    <div class="col-25">
+                        <label for="phone" class="inline">Phone number*: </label>
+                    </div>
+                    <div class="col-75">
+                        <input type="tel" id="phone" name="phone" required>
+                    </div>
+                    <div class="col-25">
+                        <label for="zip" class="inline">Zip code*: </label>
+                    </div>
+                    <div class="col-75">
+                        <input type="number" id="zip" name="zip" required>
+                    </div>
                 </fieldset>
                 <fieldset>
                     <legend>Storm Info</legend>
-                    <label for="stormDate" class="txt">Storm date: <input type="date" name="stormDate" id="stormDate"></label>
-                    <label for="stormType" class="txt">Storm type: <input list="stormTypes" name="stormType" id="stormType"></label>
+                    <div class="col-25">
+                        <label for="stormDate" class="inline">Storm date: </label>
+                    </div>
+                    <div class="col-75">
+                        <input type="date" name="stormDate" id="stormDate">
+                    </div>
+                    <div class="col-25">
+                        <label for="stormType" class="inline">Storm type: </label>
+                    </div>
+                    <div class="col-75">
+                        <input list="stormTypes" name="stormType" id="stormType">
+                    </div>
                     <datalist id="stormTypes">
                         <option value="Flash Flood"></option>
                         <option value="Hail"></option>
@@ -51,21 +81,37 @@
                         <option value="Thunderstorm"></option>
                         <option value="Tornado"></option>
                     </datalist>
-                    <label for="stormSeverity" class="txt">Storm severity: <span id="value"></span> <input type="range" min="1" max="10" value="5" class="slider" id="Range"></label>
-                    <label for="stormRegion" class="txt">Storm region: 
-                    <select name="stormRegion" id="storm-region">
-                        <option value="" selected disabled>Select Region ...</option>
-                        <option value="preston">Preston</option>
-                        <option value="soda">Soda Springs</option>
-                        <option value="fish">Fish Haven</option>
-                    </select></label>
-                    <label for="indangerLevel" class="txt">User in-danger level:</label>
-                    <label for="yes"></label><input type="radio" name="dangerlevel" id="yes" value="yes"> yes</label>
-                    <label for="maybe"></label><input type="radio" name="dangerlevel" id="maybe" value="maybe"> maybe</label>
-                    <label for="no"></label><input type="radio" name="dangerlevel" id="no" value="no"> no</label>
-                    
-                    <label for="extra-info" class="txt">Additional information or comments:
-                    <textarea name="extra-info" id="" cols="30" rows="10"></textarea></label>
+                    <div class="col-25">
+                        <label for="Range">Storm severity: <span id="value"></span></label>
+                    </div>
+                    <div class="col-75">
+                        <input type="range" min="1" max="10" value="5" class="slider" id="Range">
+                    </div>
+                    <div class="col-25">
+                        <label for="stormRegion" class="inline">Storm region: </label>
+                    </div>
+                    <div class="col-75">
+                        <select name="stormRegion" id="stormRegion">
+                            <option value="" selected disabled>Select Region ...</option>
+                            <option value="preston">Preston</option>
+                            <option value="soda">Soda Springs</option>
+                            <option value="fish">Fish Haven</option>
+                        </select>
+                    </div>
+                    <div class="col-25">
+                        <label>User in-danger level:</label>
+                    </div>
+                    <div class="col-75">
+                        <label for="yes" ><input type="radio" name="dangerlevel" id="yes" value="yes"> yes</label>
+                        <label for="maybe"><input type="radio" name="dangerlevel" id="maybe" value="maybe"> maybe</label>
+                        <label for="no"><input type="radio" name="dangerlevel" id="no" value="no"> no</label>
+                    </div>
+                    <div class="col-25">
+                        <label for="extra-info">Additional information or comments:</label>
+                    </div>
+                    <div class="col-75">
+                        <textarea name="extra-info" id="extra-info" cols="30" rows="10"></textarea>
+                    </div>
                 </fieldset>
                 <input class="btm" type="submit" value="Report Storm">
             </form>

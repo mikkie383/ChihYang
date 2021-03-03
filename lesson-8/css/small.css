@@ -105,21 +105,40 @@ fieldset legend {
   font-weight: bold;
   font-size: 1.3rem;
 }
+.col-25 {
+  float: left;
+  width: 25%;
+  padding: 1%;
+  margin-top: 2%;
+}
+.col-75 {
+  float: left;
+  width: 75%;
+  padding: 1%;
+  margin-top: 2%;
+}
 label {
-  display: block;
-  margin: 2%;
+  padding: 12px 12px 12px 0;
 }
-.txt input,
-.txt textarea {
-  display: block;
-  margin-top: 1.5%;
+.inline {
+  display: inline-block;
 }
-[type="radio"] {
-  margin-left: 2%;
+#fname,
+#email,
+#phone,
+#zip,
+#stormDate,
+#stormType,
+#stormRegion,
+#extra-info {
+  width: 100%;
+  border-radius: 4px;
+  padding: 12px;
+  resize: vertical;
 }
 .slider {
   -webkit-appearance: none;
-  width: 50%;
+  width: 100%;
   height: 15px;
   border-radius: 5px;
   outline: none;
