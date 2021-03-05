@@ -2,11 +2,111 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="description" content="WDD230, Week 9 assignment, Creating a weather home Page">
+    <title>Thank you</title>
+    <link rel="shortcut icon" href="../images/fav.ico">
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
 </head>
 <body>
-    <h1>Hello world!</h1>
+    <div class="content">
+        <header class="logo">
+            <img src="../images/growth_plant.png" alt="WEAlunteer logo">
+            <div class="siteNameMotto">
+                <h1 class="siteName">lunteer</h1>
+                <p>Weather you like it or not, Volunteer now!</p>
+            </div>
+        </header>
+        <nav>
+            <ul class="navigation">
+                <li><a class="ham" href="#">&#9776;Menu</a></li>
+                <li><a class="active" href="#">Home</a></li>
+                <li><a href="/lesson6/preston-6.html">Preston</a></li>
+                <li><a href="#">Soda Springs</a></li>
+                <li><a href="#">Fish Haven</a></li>
+                <li><a href="#">Storm Center</a></li>
+                <li><a href="ChihYang/lesson7/gallery-7.html">Gallery</a></li>
+            </ul>
+        </nav>
+        <main>
+            <div class="slideshow-container">
+
+                <div class="mySlides fade">
+                  <div class="numbertext">1 / 3</div>
+                  <img src="images/valley.jpg" alt="Valley in Preston" style="width:100%">
+                  <div class="text">Preston</div>
+                </div>
+                
+                <div class="mySlides fade">
+                  <div class="numbertext">2 / 3</div>
+                  <img src="images/field.jpg" alt="Field in Soda Spring" style="width:100%">
+                  <div class="text" style="color: black;">Soda Springs</div>
+                </div>
+                
+                <div class="mySlides fade">
+                  <div class="numbertext">3 / 3</div>
+                  <img src="images/mountain.jpg" alt="Mountain in Fish Haven" style="width:100%">
+                  <div class="text">Fish Haven</div>
+                </div>
+                
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                
+                </div>
+            <br>
+                
+            <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span> 
+                <span class="dot" onclick="currentSlide(2)"></span> 
+                <span class="dot" onclick="currentSlide(3)"></span> 
+            </div>
+            <div class="what">
+                <h2>What is WEAlunteer?</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At officia, nemo labore accusamus expedita molestiae, debitis 
+                    exercitationem sapiente ratione magnam quisquam necessitatibus nostrum fugiat! Repudiandae, sint dolorum? Laboriosam, 
+                    adipisci molestiae!</p>
+                <img src="" alt="WEAlunteer team">
+            </div>
+            <div class="towns-container">
+                <h2 class="towns-container-title">Towns Info</h2>
+                <div class="towns-info"></div>
+            </div>
+        </main>
+
+        <section class="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2878.974054390555!2d-111.79573198487248!3d43.814897579116085!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x53540b08ec44dd1d%3A0xb202fd7e52589fc3!2s345%20W%205th%20S%2C%20Rexburg%2C%20ID%2083440!5e0!3m2!1sen!2sus!4v1614833832327!5m2!1sen!2sus" width="500" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            <div class="contact-info">
+                <h3>Contact Information</h3>
+                <div class="location">
+                    <img src="../lesson6/images/Location.png" alt="location icon">
+                    <p>345 S 5th Rexburg, ID 83440</p>
+                </div>
+                <div class="phone">
+                    <img src="../lesson6/images/stmartphone.png" alt="phone icon">
+                    <p>(208)497-8888</p>
+                </div>
+                <div class="email">
+                    <img src="../lesson6/images/blueMail.png" alt="email icon">
+                    <p>wealunteer.com</p>
+                </div>
+                <div class="social">
+                    <a href="https://www.facebook.com/" target="blank" rel="noopener"><img src="../lesson6/images/fb.png" alt="facebook icon"></a>
+                    <a href="https://www.instagram.com/" target="blank" rel="noopener"><img src="../lesson6/images/ig.png" alt="instagram icon"></a>
+                    <a href="https://www.youtube.com/" target="blank" rel="noopener"><img src="../lesson6/images/youtube.png" alt="youtube icon"></a>
+                </div>
+            </div>
+            
+        </section>        
+
+        <footer>
+            <p>© <span class="year"></span> | Chihyang Tsao | Idaho | <a href="https://www.byui.edu/online" target="_blank">BYUI Online Learning</a></p>
+                <div class="date"></div>
+        </footer>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script src="js/lesson9.js"></script>
 </body>
 </html>

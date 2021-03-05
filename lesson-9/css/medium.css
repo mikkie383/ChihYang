@@ -1,0 +1,36 @@
+@media only screen and (min-width: 35em) {
+  .logo {
+    font-size: 1.6rem;
+    padding-left: 18%;
+  }
+  .siteNameMotto h1 {
+    margin-bottom: 0;
+  }
+  .siteNameMotto p {
+    font-size: 40%;
+    margin-top: -1%;
+    display: block;
+  }
+  .ham {
+    display: none;
+  }
+  nav ul {
+    display: flex;
+  }
+  nav ul li {
+    display: block;
+    flex: 1 1 100%;
+  }
+  .navigation li:first-child {
+    display: none;
+  }
+  .map {
+    display: flex;
+  }
+  iframe {
+    width: 400px;
+  }
+  .contact-info {
+    margin: 0;
+  }
+}

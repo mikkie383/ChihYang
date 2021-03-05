@@ -1,0 +1,258 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Acme", sans-serif;
+  /*background-image: url(../images/01d.png);*/
+}
+
+.content {
+  margin: 0 auto;
+}
+
+.siteName:before {
+  color: rgb(76, 129, 22);
+  content: "WEA";
+  letter-spacing: 4px;
+}
+.siteName {
+  margin-top: 1.3rem;
+}
+.siteNameMotto {
+  margin: 1rem 0;
+}
+
+.siteNameMotto p {
+  display: none;
+}
+
+.logo {
+  background: linear-gradient(to right, rgb(255, 167, 35), rgb(255, 97, 35));
+  display: flex;
+  align-items: center;
+  padding-left: 5%;
+}
+.logo img {
+  max-width: 9%;
+}
+
+nav {
+  background-color: wheat;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.navigation li:first-child {
+  display: block;
+}
+.active {
+  background-color: #bbb;
+  color: #36454f;
+}
+
+nav li {
+  display: none;
+}
+
+.responsive li {
+  display: block;
+}
+
+nav ul {
+  display: block;
+  list-style-type: none;
+  padding: 0;
+  align-items: center;
+  margin: 0;
+}
+
+nav ul li a {
+  display: block;
+
+  text-decoration: none;
+  padding: 0.75rem;
+  color: rgb(76, 129, 22);
+  white-space: nowrap;
+}
+
+nav a:hover {
+  background-color: #bbb;
+  color: #36454f;
+}
+
+main {
+  font-family: "Open Sans", sans-serif;
+  max-width: 960px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+/*hero images*/
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.activate,
+.dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+/*end hero*/
+/*towns info*/
+.towns-container {
+  background-color: rgb(222, 244, 252);
+  padding: 2%;
+}
+.towns-container-title {
+  margin-top: 0;
+}
+.towns-info {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.towns-info section {
+  text-align: center;
+  background-color: rgb(255, 245, 211);
+  margin: 5%;
+}
+.logo,
+footer {
+  background-color: wheat;
+  font-family: "Acme", sans-serif;
+}
+
+footer {
+  text-align: center;
+  padding: 0.75rem;
+}
+
+p {
+  font-size: 1.2rem;
+  padding-left: 10px;
+}
+
+.map {
+  background: linear-gradient(to right, rgb(255, 167, 35), rgb(255, 97, 35));
+  display: grid;
+  grid-template-columns: 1fr;
+  padding: 2%;
+  justify-content: space-evenly;
+}
+iframe {
+  grid-row: 2/3;
+  width: 100%;
+  margin-bottom: 2%;
+}
+.contact-info {
+  grid-row: 1/2;
+  margin: auto;
+  margin-bottom: 2%;
+}
+.location,
+.phone,
+.email {
+  display: flex;
+}
+.location img,
+.phone img,
+.email img {
+  width: 30px;
+  margin-bottom: 0.8rem;
+}
+.location p,
+.phone p,
+.email p {
+  margin: 0;
+}
+.social img {
+  margin-right: 0.8rem;
+}
