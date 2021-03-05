@@ -12,4 +12,13 @@
   iframe {
     width: 500px;
   }
+  .towns-info {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .towns-info section {
+    display: revert;
+  }
+  .towns-info img {
+    height: auto;
+  }
 }

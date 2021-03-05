@@ -187,6 +187,20 @@ main {
   }
 }
 /*end hero*/
+/*what section*/
+.what {
+  padding: 2%;
+}
+.what img {
+  width: 70%;
+  margin-right: 2%;
+  margin-left: 2%;
+  box-shadow: 0px 0px 18px #929191;
+}
+.what p {
+  font-size: 1.2rem;
+  line-height: 2rem;
+}
 /*towns info*/
 .towns-container {
   background-color: rgb(222, 244, 252);
@@ -197,13 +211,36 @@ main {
 }
 .towns-info {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr;
+  color: rgb(47, 65, 116);
 }
 .towns-info section {
   text-align: center;
   background-color: rgb(255, 245, 211);
   margin: 5%;
+  border-radius: 10px;
+  padding: 2%;
 }
+.towns-info img {
+  width: 100%;
+  height: auto;
+}
+.towns-info h2 {
+  border-radius: 10px;
+  margin: 0;
+  padding-top: 4%;
+  text-shadow: 2px 2px rgb(222, 244, 252);
+  font-size: 2rem;
+}
+.towns-info .p1 {
+  margin-top: 0;
+  font-style: italic;
+  font-weight: bold;
+}
+.towns-info .p2 {
+  margin-top: 0;
+}
+
 .logo,
 footer {
   background-color: wheat;
@@ -213,11 +250,6 @@ footer {
 footer {
   text-align: center;
   padding: 0.75rem;
-}
-
-p {
-  font-size: 1.2rem;
-  padding-left: 10px;
 }
 
 .map {

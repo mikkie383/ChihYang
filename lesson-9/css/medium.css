@@ -24,6 +24,10 @@
   .navigation li:first-child {
     display: none;
   }
+  .what img {
+    float: right;
+    width: 40%;
+  }
   .map {
     display: flex;
   }
@@ -32,5 +36,19 @@
   }
   .contact-info {
     margin: 0;
+  }
+  .towns-info section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  section:nth-child(even) img {
+    grid-column: 1;
+  }
+  section:nth-child(even) .data {
+    grid-column: 2;
+    grid-row: 1;
+  }
+  .towns-info img {
+    height: 100%;
   }
 }

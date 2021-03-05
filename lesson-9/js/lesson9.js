@@ -101,12 +101,14 @@ fetch(requestURL)
     for (let i = 0; i < towns.length; i++ ) {
         
         let card = document.createElement('section');
+        let data = document.createElement('div');
         let h2 = document.createElement('h2');
         let p1 = document.createElement('p');
         let p2 = document.createElement('p');
         let p3 = document.createElement('p');
         let p4 = document.createElement('p');
         let image = document.createElement('img');
+        
 
         if(towns[i].name == "Fish Haven" || towns[i].name == "Preston" || towns[i].name == "Soda Springs"){
             h2.textContent = towns[i].name;
@@ -114,16 +116,18 @@ fetch(requestURL)
             p2.textContent = "Tear Founded: " + towns[i].yearFounded;
             p3.textContent = "Population: " + towns[i].currentPopulation;
             p4.textContent = "Annual Rain Fall: " + towns[i].averageRainfall;
-            image.setAttribute('src', towns[i].photo);
+            image.setAttribute('src', 'images/' + towns[i].photo);
             image.setAttribute('alt', towns[i].name);
-            p1.setAttribute('id', 'p1');
-            p2.setAttribute('id', 'p2');
+            data.setAttribute('class', 'data');
+            p1.setAttribute('class', 'p1');
+            p2.setAttribute('class', 'p2');
         
-            card.appendChild(h2);
-            card.appendChild(p1);
-            card.appendChild(p2);
-            card.appendChild(p3);
-            card.appendChild(p4);
+            data.appendChild(h2);
+            data.appendChild(p1);
+            data.appendChild(p2);
+            data.appendChild(p3);
+            data.appendChild(p4);
+            card.appendChild(data)
             card.appendChild(image);
 
             document.querySelector('div.towns-info').appendChild(card);
