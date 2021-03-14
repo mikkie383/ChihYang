@@ -36,17 +36,17 @@ const key = "35049d5dd83bcba24b8fb7425d086641";
 
 let temp = document.getElementById('temp');
 let windSpeed = document.getElementById('windSpeed');
-const apiURL = `https://api.openweathermap.org/data/2.5/weather?id=${cityId}&appid=${key}`;
+const apiURL = `https://api.openweathermap.org/data/2.5/weather?id=${cityId}&units=imperial&appid=${key}`;
 fetch(apiURL)
   .then((response) => response.json())
   .then((jsObject) => {
-
+    console.log(jsObject);
     document.getElementById('desc').textContent = jsObject.weather[0].main;
-    let temp1 = ((jsObject.main.temp - 273.15) * 9 / 5 + 32).toFixed(0);
+    let temp1 = (jsObject.main.temp).toFixed(1);
     temp.textContent = temp1;
     document.getElementById('hum').textContent = jsObject.main.humidity;
     let windSpeed1 = jsObject.wind.speed;
-    windSpeed.textContent = jsObject.wind.speed.toFixed(0);
+    windSpeed.textContent = jsObject.wind.speed.toFixed(1);
 
     if (temp1 <= 50 && windSpeed1 >= 3) {
         document.querySelector(".windChill").innerHTML = windChill(temp1, windSpeed1) + "°F";
