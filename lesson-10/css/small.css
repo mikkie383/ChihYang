@@ -172,6 +172,10 @@ p {
   font-weight: bold;
   padding-bottom: 10px;
 }
+.forecast-info img {
+  width: 50%;
+  margin: 0 auto;
+}
 
 .volunteer-info {
   background-color: #d2cfcf;

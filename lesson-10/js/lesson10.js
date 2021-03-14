@@ -42,7 +42,7 @@ fetch(apiURL)
   .then((jsObject) => {
 
     document.getElementById('desc').textContent = jsObject.weather[0].main;
-    let temp1 = ((jsObject.main.temp - 273) * 9 / 5 + 32).toFixed(0);
+    let temp1 = ((jsObject.main.temp - 273.15) * 9 / 5 + 32).toFixed(0);
     temp.textContent = temp1;
     document.getElementById('hum').textContent = jsObject.main.humidity;
     let windSpeed1 = jsObject.wind.speed;
@@ -87,7 +87,7 @@ fetch(forecast)
             let count = 0;
             let d = new Date(jsObject.list[i].dt_txt);
             p.textContent = d.toString().substr(0, 3);
-            div.textContent = ((jsObject.list[i].main.temp - 273) * 9 / 5 + 32).toFixed(0) + "°F";
+            div.textContent = ((jsObject.list[i].main.temp - 273.15) * 9 / 5 + 32).toFixed(0) + "°F";
             image.setAttribute('src', imagesrc);
             image.setAttribute('alt', jsObject.list[i].weather[0].description);
 
