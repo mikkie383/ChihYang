@@ -40,7 +40,6 @@ const apiURL = `https://api.openweathermap.org/data/2.5/weather?id=${cityId}&uni
 fetch(apiURL)
   .then((response) => response.json())
   .then((jsObject) => {
-    console.log(jsObject);
     document.getElementById('desc').textContent = jsObject.weather[0].main;
     let temp1 = (jsObject.main.temp).toFixed(1);
     temp.textContent = temp1;
@@ -69,10 +68,9 @@ const forecast = `https://api.openweathermap.org/data/2.5/forecast?id=${cityId}&
 fetch(forecast)
   .then((response) => response.json())
   .then((jsObject) => {
-    console.log(jsObject);
-    let i;
-    for(i = 0; i <= jsObject.list.length; i++){
-
+    
+    for(let i = 0; i <= jsObject.cnt; i++){
+        
         let sixPM = jsObject.list[i].dt_txt.substr(11, 8);
         if(sixPM == "18:00:00"){
             let imagesrc = 'https://openweathermap.org/img/w/' + jsObject.list[i].weather[0].icon + '.png';
@@ -84,7 +82,6 @@ fetch(forecast)
             section.setAttribute('class', 'day');
             div.setAttribute('class', 'forecast-temp');
 
-            let count = 0;
             let d = new Date(jsObject.list[i].dt_txt);
             p.textContent = d.toString().substr(0, 3);
             div.textContent = ((jsObject.list[i].main.temp - 273.15) * 9 / 5 + 32).toFixed(0) + "°F";
@@ -96,8 +93,8 @@ fetch(forecast)
             section.appendChild(div);
 
             document.querySelector('div.forecast-info').appendChild(section);
-            count++;
         }
+        
     }
     
   });
