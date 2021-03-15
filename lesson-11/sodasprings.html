@@ -3,10 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Assignment about replacing data from static content using weather API - Preston Page">
+    <meta name="description" content="Assignment about creating Soda Springs Page">
     <title>Preston-Home</title>
     <link rel="shortcut icon" href="../images/fav.ico">
-    <!--<link href="https://fonts.googleapis.com/css2?family=Acme&family=Open+Sans:wght@300&display=swap" rel="stylesheet">-->
     <link rel="stylesheet" href="../css/normalize.css">
     <link rel="stylesheet" href="css/small.css">
     <link rel="stylesheet" href="css/medium.css">
@@ -26,17 +25,21 @@
             <ul class="navigation">
                 <li><a class="ham" href="#">&#9776;Menu</a></li>
                 <li><a href="https://mikkie383.github.io/ChihYang/lesson-9/index.html">Home</a></li>
-                <li><a class="active" href="https://mikkie383.github.io/ChihYang/lesson-10/preston-10.html">Preston</a></li>
-                <li><a href="#">Soda Springs</a></li>
-                <li><a href="#">Fish Haven</a></li>
+                <li><a href="https://mikkie383.github.io/ChihYang/lesson-10/preston-10.html">Preston</a></li>
+                <li><a class="active" href="https://mikkie383.github.io/ChihYang/lesson-11/sodasprings.html">Soda Springs</a></li>
+                <li><a href="https://mikkie383.github.io/ChihYang/lesson-11/fishhaven.html">Fish Haven</a></li>
                 <li><a href="https://mikkie383.github.io/ChihYang/lesson-8/stormcenter.html">Storm Center</a></li>
                 <li><a href="https://mikkie383.github.io/ChihYang/lesson7/gallery-7.html">Gallery</a></li>
             </ul>
         </nav>
         <main>
-            <h2 class="townName">Preston Idaho</h2>
+            <h2 class="townName">Soda Springs Idaho</h2>
             <div class="banner-box">
-                <img src="images/valley.jpg" alt="Picture of Preston">
+                <picture>
+                    <source media="(max-width: 360px)" srcset="images/field.jpg">
+                    <source media="(max-width: 660px)" srcset="images/field.jpg">
+                    <img src="images/field.jpg" alt="franklin">
+                </picture>
                 <div class="weather-info">
                     <h3>Weather Summary</h3>
                     <hr>
@@ -62,7 +65,7 @@
         </main>
 
         <section class="map">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d47365.77385344583!2d-111.9153444655827!3d42.09974162638001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8754f78c7cda6c31%3A0xf1b3b4fc465a4a3f!2sPreston%2C%20ID%2083263!5e0!3m2!1sen!2sus!4v1611804609092!5m2!1sen!2sus" width="500" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d23471.9788131375!2d-111.6062816454908!3d42.661411516721216!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8755968bb0047ae5%3A0x9d3970a1a6df8e12!2sSoda%20Springs%2C%20ID%2083276!5e0!3m2!1sen!2sus!4v1615838898052!5m2!1sen!2sus" width="500" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
             <div class="contact-info">
                 <h3>Contact Information</h3>
                 <div class="location">
@@ -92,6 +95,6 @@
         </footer>
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
-    <script src="js/lesson10.js"></script>
+    <script src="js/lesson11_sodasprings.js"></script>
 </body>
 </html>
