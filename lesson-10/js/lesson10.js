@@ -98,3 +98,28 @@ fetch(forecast)
     }
     
   });
+
+  //pull twon data from json
+const requestURL = 'https://byui-cit230.github.io/weather/data/towndata.json';
+
+fetch(requestURL)
+  .then(function (response) {
+    return response.json();
+  })
+  .then(function (jsonObject) {
+    console.table(jsonObject);  // temporary checking for valid response and data parsing
+
+    const towns = jsonObject['towns'];
+    
+    let marquee = document.createElement('marquee');
+
+    let text1 = towns[5].events[0];
+    let text2 = towns[5].events[1];
+    let text3 = towns[5].events[2];
+    
+    marquee.innerHTML = "Events: ~~" + text1 + "~~&emsp;~~" + text2 + "~~&emsp;~~" + text3 + "~~";
+    //marquee.setAttribute('scrolldelay', '100');
+
+    document.querySelector('.eventlist').appendChild(marquee);    
+    
+  });

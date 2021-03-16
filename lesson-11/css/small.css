@@ -94,6 +94,9 @@ main {
   margin: 0 auto;
   margin-bottom: 20px;
 }
+marquee {
+  color: rgb(76, 129, 22);
+}
 .townName {
   padding-left: 10px;
 }
