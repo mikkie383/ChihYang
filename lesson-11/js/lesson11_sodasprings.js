@@ -113,14 +113,14 @@ fetch(requestURL)
 
     const towns = jsonObject['towns'];
     
-    let marquee = document.createElement('marquee');
+    let marquee = document.createElement('p');
 
-    let text1 = towns[6].events[0];
-    let text2 = towns[6].events[1];
-    let text3 = towns[6].events[2];
+    let text1 = towns[0].events[0];
+    let text2 = towns[0].events[1];
+    let text3 = towns[0].events[2];
     
     marquee.innerHTML = "Events: ~~" + text1 + "~~&emsp;~~" + text2 + "~~&emsp;~~" + text3 + "~~";
-    //marquee.setAttribute('scrolldelay', '100');
+    marquee.setAttribute('class', 'marquee');
 
     document.querySelector('.eventlist').appendChild(marquee);    
     
