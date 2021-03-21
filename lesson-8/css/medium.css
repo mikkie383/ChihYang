@@ -3,6 +3,9 @@
     font-size: 1.6rem;
     padding-left: 18%;
   }
+  .logo img {
+    max-width: 5rem;
+  }
   .siteNameMotto h1 {
     margin-bottom: 0;
   }

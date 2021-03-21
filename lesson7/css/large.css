@@ -2,6 +2,9 @@
   .logo {
     font-size: 2.5rem;
   }
+  .logo img {
+    max-width: 7rem;
+  }
   nav {
     padding-left: 17%;
     padding-right: 17%;
