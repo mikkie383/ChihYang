@@ -40,7 +40,7 @@ const apiURL = `https://api.openweathermap.org/data/2.5/weather?q=${cityName},id
 fetch(apiURL)
   .then((response) => response.json())
   .then((jsObject) => {
-    console.log(jsObject);
+    
     document.getElementById('desc').textContent = jsObject.weather[0].main;
     let temp1 = (jsObject.main.temp).toFixed(1);
     temp.textContent = temp1;
@@ -69,7 +69,7 @@ const forecast = `https://api.openweathermap.org/data/2.5/forecast?q=${cityName}
 fetch(forecast)
   .then((response) => response.json())
   .then((jsObject) => {
-    console.log(jsObject);
+    
     let i;
     for(i = 0; i <= jsObject.list.length; i++){
 
@@ -110,7 +110,7 @@ fetch(requestURL)
     return response.json();
   })
   .then(function (jsonObject) {
-    console.table(jsonObject);  // temporary checking for valid response and data parsing
+    //console.table(jsonObject);  // temporary checking for valid response and data parsing
 
     const towns = jsonObject['towns'];
     
