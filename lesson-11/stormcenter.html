@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="WDD230, Week 8 assignment, Creating a Storm Center Page for the user to report a storm or unusual weather event">
+    <title>Storm Center</title>
+    <link rel="shortcut icon" href="../images/fav.ico">
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+</head>
+<body>
+    <div class="content">
+        <header class="logo">
+            <a href="index.html">
+                <img src="../images/growth_plant.png" alt="WEAlunteer logo">
+            </a>
+            <div class="siteNameMotto">
+                <h1 class="siteName">lunteer</h1>
+                <p>Weather you like it or not, Volunteer now!</p>
+            </div>
+        </header>
+        <nav>
+            <ul class="navigation">
+                <li><a class="ham" href="#">&#9776;Menu</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="preston.html">Preston</a></li>
+                <li><a href="sodasprings.html">Soda Springs</a></li>
+                <li><a href="fishhaven.html">Fish Haven</a></li>
+                <li><a class="active" href="stormcenter.html">Storm Center</a></li>
+                <li><a href="gallery-7.html">Gallery</a></li>
+            </ul>
+        </nav>
+        <main>
+            <form action="thanks.html" method="get">
+                <fieldset>
+                    <legend>Contact Info</legend>
+                    <div class="col-25">
+                        <label for="fname" class="inline">Full name*: </label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" id="fname" name="fname" required pattern="[A-Za-z]{5,}">
+                    </div>
+                    <div class="col-25">
+                        <label for="email" class="inline">Email: </label>
+                    </div>
+                    <div class="col-75">
+                        <input type="email" id="email" name="email" placeholder="smi21003@byui.edu">
+                    </div>
+                    <div class="col-25">
+                        <label for="phone" class="inline">Phone number*: </label>
+                    </div>
+                    <div class="col-75">
+                        <input type="tel" id="phone" name="phone" required>
+                    </div>
+                    <div class="col-25">
+                        <label for="zip" class="inline">Zip code*: </label>
+                    </div>
+                    <div class="col-75">
+                        <input type="number" id="zip" name="zip" required>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>Storm Info</legend>
+                    <div class="col-25">
+                        <label for="stormDate" class="inline">Storm date: </label>
+                    </div>
+                    <div class="col-75">
+                        <input type="date" name="stormDate" id="stormDate">
+                    </div>
+                    <div class="col-25">
+                        <label for="stormType" class="inline">Storm type: </label>
+                    </div>
+                    <div class="col-75">
+                        <input list="stormTypes" name="stormType" id="stormType">
+                    </div>
+                    <datalist id="stormTypes">
+                        <option value="Flash Flood"></option>
+                        <option value="Hail"></option>
+                        <option value="Hurricane"></option>
+                        <option value="Thunderstorm"></option>
+                        <option value="Tornado"></option>
+                    </datalist>
+                    <div class="col-25">
+                        <label for="Range">Storm severity: <span id="value"></span></label>
+                    </div>
+                    <div class="col-75">
+                        <input type="range" min="1" max="10" value="5" class="slider" id="Range">
+                    </div>
+                    <div class="col-25">
+                        <label for="stormRegion" class="inline">Storm region: </label>
+                    </div>
+                    <div class="col-75">
+                        <select name="stormRegion" id="stormRegion">
+                            <option value="" selected disabled>Select Region ...</option>
+                            <option value="preston">Preston</option>
+                            <option value="soda">Soda Springs</option>
+                            <option value="fish">Fish Haven</option>
+                        </select>
+                    </div>
+                    <div class="col-25">
+                        <label>User in-danger level:</label>
+                    </div>
+                    <div class="col-75">
+                        <label for="yes" ><input type="radio" name="dangerlevel" id="yes" value="yes"> yes</label>
+                        <label for="maybe"><input type="radio" name="dangerlevel" id="maybe" value="maybe"> maybe</label>
+                        <label for="no"><input type="radio" name="dangerlevel" id="no" value="no"> no</label>
+                    </div>
+                    <div class="col-25">
+                        <label for="extra-info">Additional information or comments:</label>
+                    </div>
+                    <div class="col-75">
+                        <textarea name="extra-info" id="extra-info" cols="30" rows="10"></textarea>
+                    </div>
+                </fieldset>
+                <input class="btm" type="submit" value="Report Storm">
+            </form>
+            
+        </main>
+
+        
+
+        <footer>
+            <p>© <span class="year"></span> | Chihyang Tsao | Idaho | <a href="https://www.byui.edu/online" target="_blank">BYUI Online Learning</a></p>
+                <div class="date"></div>
+        </footer>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script src="js/lesson11_general.js"></script>
+</body>
+</html>

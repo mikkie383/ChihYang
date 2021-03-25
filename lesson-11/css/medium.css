@@ -41,4 +41,26 @@
   iframe {
     width: 400px;
   }
+  .what img {
+    float: right;
+    width: 40%;
+  }
+  .towns-info section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  section:nth-child(even) img {
+    grid-column: 1;
+  }
+  section:nth-child(even) .data {
+    grid-column: 2;
+    grid-row: 1;
+  }
+  .towns-info img {
+    height: 100%;
+  }
+  .gallery-container {
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 10px;
+  }
 }
