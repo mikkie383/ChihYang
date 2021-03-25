@@ -21,12 +21,6 @@
   .towns-info img {
     height: auto;
   }
-  picture {
-    box-shadow: 5px 10px 18px #b3b2b2;
-  }
-  picture:hover {
-    box-shadow: 5px 10px 18px #6b6b6b;
-  }
   .col-25 {
     width: 25%;
     margin-top: 2%;
@@ -39,10 +33,10 @@
   .gallery-container {
     grid-template-columns: 1fr 1fr 1fr;
   }
-  picture {
+  .gallery-container picture {
     box-shadow: 5px 10px 18px #b3b2b2;
   }
-  picture:hover {
+  .gallery-container picture:hover {
     box-shadow: 5px 10px 18px #6b6b6b;
   }
   .gallery-container p {

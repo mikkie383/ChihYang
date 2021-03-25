@@ -502,7 +502,7 @@ label {
   margin-left: 2%;
   margin-right: 2%;
 }
-picture {
+.gallery-container picture {
   margin-bottom: 10px;
 }
 .gallery-container img {

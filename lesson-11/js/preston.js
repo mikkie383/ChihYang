@@ -1,46 +1,22 @@
-WebFont.load({google: {families: ["Acme", "Open Sans"]}});
-
-const year = document.querySelector('.year');
-const time = document.querySelector('.date');
-var options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
-
-const date = new Date();
-
-year.textContent = date.getFullYear();
-time.innerHTML = `Last Updated: ${date.toLocaleDateString("en-AU", options)}`;
-
-const hamButton = document.querySelector('.ham');
-const mainMenu = document.querySelector('.navigation');
 const pancake = document.getElementById('pancake');
 
-hamButton.addEventListener('click', () =>{
-    mainMenu.classList.toggle('responsive')
-}, false);
 
-window.onresize = () => {
-    if(window.innerWidth > 760){
-        
-        mainMenu.classList.remove('responsive');
-        
-    }
-};
 
 if(date.getDay() == 5){
     pancake.style.display = "block";
 }
 
 //city id
-const cityName = "Soda Springs";
+const cityId = 5604473;
 // API KEY 
 const key = "35049d5dd83bcba24b8fb7425d086641";
 
 let temp = document.getElementById('temp');
 let windSpeed = document.getElementById('windSpeed');
-const apiURL = `https://api.openweathermap.org/data/2.5/weather?q=${cityName},id,usa&units=imperial&appid=${key}`;
+const apiURL = `https://api.openweathermap.org/data/2.5/weather?id=${cityId}&units=imperial&appid=${key}`;
 fetch(apiURL)
   .then((response) => response.json())
   .then((jsObject) => {
-    
     document.getElementById('desc').textContent = jsObject.weather[0].main;
     let temp1 = (jsObject.main.temp).toFixed(1);
     temp.textContent = temp1;
@@ -65,14 +41,13 @@ function windChill(t, s) {
 }
 
 //5day forecast
-const forecast = `https://api.openweathermap.org/data/2.5/forecast?q=${cityName},id,usa&appid=${key}`;
+const forecast = `https://api.openweathermap.org/data/2.5/forecast?id=${cityId}&appid=${key}`;
 fetch(forecast)
   .then((response) => response.json())
   .then((jsObject) => {
     
-    let i;
-    for(i = 0; i <= jsObject.list.length; i++){
-
+    for(let i = 0; i <= jsObject.cnt; i++){
+        
         let sixPM = jsObject.list[i].dt_txt.substr(11, 8);
         if(sixPM == "18:00:00"){
             let imagesrc = 'https://openweathermap.org/img/w/' + jsObject.list[i].weather[0].icon + '.png';
@@ -84,7 +59,6 @@ fetch(forecast)
             section.setAttribute('class', 'day');
             div.setAttribute('class', 'forecast-temp');
 
-            let count = 0;
             let d = new Date(jsObject.list[i].dt_txt);
             p.textContent = d.toString().substr(0, 3);
             div.textContent = ((jsObject.list[i].main.temp - 273.15) * 9 / 5 + 32).toFixed(0) + "°F";
@@ -96,8 +70,8 @@ fetch(forecast)
             section.appendChild(div);
 
             document.querySelector('div.forecast-info').appendChild(section);
-            count++;
         }
+        
     }
     
   });
@@ -110,14 +84,15 @@ fetch(requestURL)
     return response.json();
   })
   .then(function (jsonObject) {
+    
 
     const towns = jsonObject['towns'];
     
     let marquee = document.createElement('p');
 
-    let text1 = towns[0].events[0];
-    let text2 = towns[0].events[1];
-    let text3 = towns[0].events[2];
+    let text1 = towns[6].events[0];
+    let text2 = towns[6].events[1];
+    let text3 = towns[6].events[2];
     
     marquee.innerHTML = "Events: ~~" + text1 + "~~&emsp;~~" + text2 + "~~&emsp;~~" + text3 + "~~";
     marquee.setAttribute('class', 'marquee');
