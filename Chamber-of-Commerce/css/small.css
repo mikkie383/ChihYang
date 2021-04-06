@@ -1,0 +1,496 @@
+@import url("https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Poppins:wght@300&family=Roboto+Slab&display=swap");
+
+body {
+  margin: 0;
+}
+header,
+footer {
+  font-family: "Roboto Slab", serif;
+  color: #850f0f;
+}
+header {
+  border-bottom: 1px solid black;
+  text-align: center;
+}
+header img {
+}
+header li:first-child {
+  display: block;
+}
+header nav li {
+  display: none;
+}
+header li a {
+  padding-bottom: 1em;
+  padding-top: 1em;
+}
+.responsive li {
+  display: block;
+}
+header nav a:hover {
+  background-color: #bbb;
+  color: #36454f;
+}
+header ul {
+  padding: 0;
+  text-align: center;
+  margin: 0;
+}
+header li {
+  list-style: none;
+}
+.active {
+  background-color: #16427c;
+  color: #b5fffc;
+}
+header a {
+  display: block;
+}
+header a,
+footer a {
+  text-decoration: none;
+  color: #850f0f;
+}
+main {
+  font-family: "Poppins", sans-serif;
+  background-color: #16427c;
+}
+
+.hero img {
+  width: 100%;
+}
+.hero {
+  position: relative;
+}
+.weather-info {
+  display: block;
+  top: 10px;
+  background-color: rgba(240, 240, 240, 0.8);
+  margin-top: 1%;
+  margin-left: 2%;
+  padding: 15px;
+}
+.weather-info h2 {
+  margin: 0;
+}
+.advertisement {
+  margin: 2%;
+  display: grid;
+  grid-template-columns: 1fr;
+  text-align: center;
+  grid-gap: 1%;
+}
+.ad1 {
+  padding: 2%;
+  background-color: #cbeffb;
+}
+.ad1 img {
+  width: 80%;
+}
+.ad2 {
+  padding: 2%;
+  background-color: #cbeffb;
+}
+.ad2-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.ad2-grid img {
+  width: 100%;
+  grid-column: 1/2;
+  grid-row: 1/2;
+}
+.ad2-grid p {
+  grid-column: 2/3;
+  grid-row: 1/2;
+}
+.ad3 {
+  display: block;
+  padding: 2%;
+  background-color: #cbeffb;
+  margin-bottom: 3%;
+}
+.ad3 img {
+  margin-left: auto;
+  width: 100%;
+}
+.ad1,
+.ad2,
+.ad3 {
+  border-radius: 10px;
+}
+.events {
+  display: block;
+  margin: 2%;
+}
+.townEvents,
+.weatherEvents {
+  margin: 0 auto;
+  padding: 2%;
+  background-color: #ffdee9;
+  background-image: linear-gradient(0deg, #ffdee9 0%, #b5fffc 100%);
+}
+.weatherEvents {
+  margin-top: 2%;
+}
+.townEvents h2,
+.weatherEvents h2 {
+  text-align: center;
+  color: #850f0f;
+}
+.weatherEvents .forecast-box {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  border: 1px solid #850f0f;
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+.weatherEvents .box1 {
+  grid-column: 1/2;
+  grid-row: 1/2;
+  border-right: 1px solid #850f0f;
+  padding: 10px;
+}
+.weatherEvents .box2 {
+  grid-column: 2/3;
+  grid-row: 1/2;
+  border-right: 1px solid #850f0f;
+  padding: 10px;
+}
+.weatherEvents .box3 {
+  grid-column: 3/4;
+  grid-row: 1/2;
+  padding: 10px;
+}
+#day1,
+#day2,
+#day3 {
+  border-bottom: 1px solid #850f0f;
+  font-family: "Dela Gothic One", cursive;
+}
+.about {
+  text-align: center;
+  margin: 2%;
+  color: #cbeffb;
+}
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+.about-grid img {
+  width: 100%;
+}
+.about h1 {
+  margin-bottom: 1%;
+}
+.about p {
+  padding-right: 4%;
+  padding-left: 4%;
+  padding-bottom: 1%;
+  margin: 0;
+  line-height: 2.5rem;
+  font-size: 1.3rem;
+}
+.about button {
+  font-size: 2rem;
+  margin: 1.5%;
+  padding-left: 1.2%;
+  padding-right: 1.2%;
+  border-radius: 6px;
+  cursor: pointer;
+  color: #850f0f;
+  background-color: #ffdee9;
+}
+
+.contact {
+  display: grid;
+  grid-template-columns: auto;
+  text-align: center;
+  background-color: #b5fffc;
+}
+.contact h1 {
+  grid-column: 1/2;
+  grid-row: 1/2;
+}
+.location {
+  grid-column: 1/2;
+  grid-row: 3/4;
+}
+.icons {
+  grid-column: 1/2;
+  grid-row: 2/3;
+}
+.icons img {
+  margin: 2%;
+}
+.officeHour {
+  grid-column: 1/2;
+  grid-row: 4/5;
+}
+footer {
+  text-align: center;
+  padding: 1%;
+}
+footer p {
+  margin: 0;
+}
+
+/*join page*/
+.join {
+  margin: 2%;
+}
+.join h1 {
+  margin-bottom: 0;
+  color: #b5fffc;
+}
+.join .join-container {
+  display: block;
+}
+.benefits {
+  padding: 2%;
+  margin: 2%;
+}
+.join-form {
+  margin: 2%;
+}
+.benefits {
+  border: 1px solid black;
+  background-color: rgb(224, 224, 224);
+}
+.benefits h2 {
+  text-align: center;
+  margin-top: 0;
+}
+.benefits p {
+  margin: 2%;
+  line-height: 2em;
+  text-indent: 3em;
+}
+.join-form form fieldset {
+  background-color: #ffdee9;
+  background-image: linear-gradient(180deg, #ffdee9 0%, #b5fffc 100%);
+}
+.join-form legend {
+  font-size: 1.3em;
+  text-shadow: 0px 0px 20px #fafafa, 0px 0px 20px #ffffff;
+  font-weight: bold;
+}
+#fname,
+#lname,
+#title,
+#email,
+#phone,
+#businessname,
+#businessaddress,
+#businessweb,
+#business-desc,
+#comment {
+  width: 95%;
+  padding: 6px;
+  margin-bottom: 1%;
+}
+#gold {
+  white-space: nowrap;
+}
+.join-form .btm,
+.contact-info .btm {
+  font-size: 2em;
+  display: block;
+  margin: 0 auto;
+  margin-top: 2%;
+  border-radius: 6px;
+  cursor: pointer;
+  color: #850f0f;
+  background-color: #ffdee9;
+}
+/*confirmation and thank you page*/
+.confirmmessage,
+.thankyou {
+  text-align: center;
+  color: #850f0f;
+}
+.confirmmessage img {
+  width: 450px;
+}
+.thankyou {
+  margin: 2%;
+}
+
+/*contact page*/
+.contact-info {
+  display: block;
+  margin: 2%;
+}
+.contact-left,
+.contact-info h1 {
+  text-align: center;
+}
+.contact-info h1 {
+  color: #b5fffc;
+}
+.contact-left {
+  color: #b5fffc;
+}
+.contact-left h2 {
+  margin: 0;
+}
+.contact-left p,
+.contact-info h1 {
+  margin-top: 0;
+  margin: 1%;
+}
+
+.contact-info form fieldset {
+  background-color: #ffdee9;
+  background-image: linear-gradient(0deg, #ffdee9 0%, #b5fffc 100%);
+}
+
+/*city page*/
+.demographic,
+.things {
+  margin: 2%;
+}
+.demographic h1,
+.things h1 {
+  color: #b5fffc;
+}
+.demographic .accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+}
+.demographic #race {
+  margin-top: 1%;
+}
+.demographic .open,
+.demographic .accordion:hover {
+  background-color: #ccc;
+}
+
+.demographic .accordion:after {
+  content: "\1F845";
+  color: #777;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.demographic .open:after {
+  content: "\1F847";
+}
+
+.demographic .panel {
+  display: block;
+  padding: 0 18px;
+  background-color: white;
+  max-height: fit-content;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+.demographic .panel img {
+  width: 100%;
+}
+.things {
+  display: block;
+}
+
+.things .townEvents {
+  padding: 2%;
+  margin: 2%;
+  background-color: #ffdee9;
+  background-image: linear-gradient(0deg, #ffdee9 0%, #b5fffc 100%);
+}
+.things .jobs {
+  padding: 2%;
+  margin: 2%;
+  background-color: #ffdee9;
+  background-image: linear-gradient(0deg, #ffdee9 0%, #b5fffc 100%);
+}
+.things .volunteers {
+  padding: 2%;
+  margin: 2%;
+  background-color: #ffdee9;
+  background-image: linear-gradient(0deg, #ffdee9 0%, #b5fffc 100%);
+}
+
+.things h2 {
+  text-align: center;
+  color: #850f0f;
+}
+
+/*directory page*/
+.local {
+  margin: 2%;
+}
+.local .business-title {
+  display: flex;
+  justify-content: space-between;
+  color: #b5fffc;
+}
+.local .business-title p {
+  margin: 0;
+  margin-top: auto;
+  margin-right: 3%;
+}
+.local .business-title button {
+  border-radius: 6px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  color: #850f0f;
+  background-color: #b5fffc;
+  font-weight: bold;
+}
+.local .business-title button:hover {
+  background-color: rgb(197, 196, 196);
+}
+.local .listGrid {
+  padding: 2%;
+}
+.local .listGrid section {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  text-align: center;
+  background-color: #ffdee9;
+  margin: 1%;
+}
+.local .listGrid #tableTitle {
+  border-right: 0;
+  border-left: 0;
+}
+.local .listGrid section img {
+  width: 90%;
+}
+.local .listGrid section p,
+.local .listGrid section h2,
+.local .listGrid section img,
+.local .listGrid section a {
+  margin: auto;
+  padding: 2%;
+}
+.local .listGrid section img,
+.local .listGrid section #logoImage,
+.local .listGrid section .businessAddress,
+.local .listGrid section #localAddress {
+  display: none;
+}
+
+.gridCard {
+  display: block;
+}
+.gridCard section {
+  background-color: #ffdee9;
+  text-align: center;
+  margin: 2%;
+  padding: 2%;
+}
+.gridCard section img {
+  width: 90%;
+}

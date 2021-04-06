@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    body{
+        background-color: black;
+        text-align: center;
+    }
+    h1{
+        color: black;
+
+text-shadow: 3px 3px 20px #ff99cc,
+    -2px 1px 30px #ff99cc;
+    }
+    .half-color {
+        position:relative;
+        font-size:80px;
+        display:inline-block;
+         color:#FFD600;
+         font-family: 'Chilanka', cursive;
+    }
+    .half-color:before{
+        content: attr(attribute);
+        color:BLUE;
+        position:absolute;
+        top:0;
+        left:0;
+        height:50%;
+        overflow:hidden;
+    }</style>
+</head>
+<body>
+    <h1><span class="half-color" attribute="U">U</span>
+        <span class="half-color" attribute="K">K</span>
+        <span class="half-color" attribute="R">R</span>
+        <span class="half-color" attribute="A">A</span>
+        <span class="half-color" attribute="I">I</span>
+        <span class="half-color" attribute="N">N</span>
+        <span class="half-color" attribute="E">E</span></h1>
+        <h1>Test</h1>
+</body>
+</html>

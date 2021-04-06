@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Creating Rexburg Chamber of Commerce site: home page">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+    <title>Home</title>
+</head>
+<body>
+    <header>
+        <a href="index.html" id="logo"><img src="images/rcc1.png" alt="The Rexburg Chamber of Commerce"></a>
+        <nav>
+            <ul class="navigation">
+                <li><a class="ham" href="#">&#9776;Menu</a></li>
+                <li><a class="active" href="index.html">Home</a></li>
+                <li><a href="city.html">City</a></li>
+                <li><a href="join.html">Join</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="hero">
+            <img src="images/rexburg.jpg" alt="Rexburg">
+            <div class="weather-info">
+                <h2>Weather Summary</h2>
+                <hr>
+                <p><strong>Currently: </strong><span id="desc"></span></p>
+                <p><strong>Temperature: </strong><span id="temp"></span> °F</p>
+                <p><strong>Humidity: </strong><span id="hum"></span>%</p>
+            </div>
+        </div>
+        <div class="advertisement">
+            <div class="ad1">
+                <img src="images/bookviking.png" alt="Book Viking">
+                <p>Guaranteed 20-50% less than campus</p>
+                <h4>155 W Main #10</h4>
+            </div>
+            <div class="ad2">
+                <h2>Millhollow</h2>
+                <div class="ad2-grid">
+                    <img src="images/creamsicle.jpg" alt="Creamsicle yogurt">
+                    <p>Get a taste of summer with an Orange Creamsicle yogurt! 🌳🌼</p>
+                </div>
+            </div>
+            <div class="ad3">
+                <h2>Bountiful Place</h2>
+                <img src="images/bountiful.jpg" alt="Bountiful Place">
+                <p id="p1">A semester is only $895. Sign a yearly contact, get $100 off</p>
+                <p id="p2">Free waffle Wednesday!</p>
+            </div>
+        </div>
+        <div class="events">
+            <div class="townEvents">
+                <h2>Upcomimg Events</h2>
+                <ul>
+                    <li>April 1st: April Fools Party at the Porter Park</li>
+                    <li>April 15th: Easter Egg Hunt at the Nature Park</li>
+                    <li>May 12th: Rightous Slice All Pizza 10% off</li>
+                    <li>May 26th: All 50% of at the Kiwi Loco</li>
+                </ul>
+            </div>
+            <div class="weatherEvents">
+                <h2>Future Temperature</h2>
+                <div class="forecast-box">
+                    <div class="box1">
+                        <span id="day1">day1</span>
+                        <p><span id="temp1">temp1</span>°F</p>
+                    </div>
+                    <div class="box2">
+                        <span id="day2">day2</span>
+                        <p><span id="temp2">temp2</span>°F</p>
+                    </div>
+                    <div class="box3">
+                        <span id="day3">day1</span>
+                        <p><span id="temp3">temp1</span>°F</p>
+                    </div>
+                </div>    
+            </div>
+        </div>
+        <div class="about">
+            <h1>About Us</h1>
+            <div class="about-grid">
+                <p>The Rexburg Chamber of Commerce(RCC) is a business that helps local businesses to grow and achieve their business goals.
+                   We focus on everyone who is above 18 and trying to start a business or currently having a business and looking to grow.
+                   No matter what situation your business is, we are here to help. We have the best network in the Rexburg area. 
+                   We will assist you to know how to promote your business. We will provide many great business ideas to help you grow.
+                   Most importantly, we want you to be successful! Don't hastate. Join us now to find out more!</p>
+                <img src="images/rccMembers.jpg" alt="RCC workers">
+            </div>
+            <button type="button" onclick="location.href='join.html'">Join</button>
+        </div>
+        <div class="contact">
+            <h1>Contact Us</h1>
+            <div class="location">
+                <h2>Location</h2>
+                <p>345 W 5th S Rexburg, ID 83440</p>
+            </div>
+            <div class="icons">
+                <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer"><img src="images/facebook-icon.png" alt="facebook icon"></a>
+                <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer"><img src="images/linkedin-icon.png" alt="linkedin icon"></a>
+                <a href="#" target="_blank" rel="noopener noreferrer"><img src="images/email-icon.png" alt="email icon"></a>
+            </div>
+            <div class="officeHour">
+                <h2>Office Hour</h2>
+                <p>From 8 a.m. to 4 p.m. Mon - Fri</p>
+                <p>208-497-8888</p>
+            </div>
+        </div>
+        
+    </main>
+
+    <footer>
+        <p>© <span class="year"></span> | Chihyang Tsao | Idaho | <a href="https://www.byui.edu/online" target="_blank">BYUI Online Learning</a></p>
+                <div class="date">test</div>
+    </footer>
+    <script src="js/script.js"></script>
+    <script src="js/home.js"></script>
+</body>
+</html>

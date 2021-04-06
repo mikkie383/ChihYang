@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Creating Rexburg Chamber of Commerce site: join page">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+    <title>Join</title>
+</head>
+<body>
+    <header>
+        <a href="index.html" id="logo"><img src="images/rcc1.png" alt="The Rexburg Chamber of Commerce"></a>
+        <nav>
+            <ul class="navigation">
+                <li><a class="ham" href="#">&#9776;Menu</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="city.html">City</a></li>
+                <li><a class="active" href="join.html">Join</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="hero">
+            <img src="images/rexburg.jpg" alt="Rexburg">
+        </div>
+        <div class="join">
+            <h1>Join Us</h1>
+            <div class="join-container">
+                <div class="benefits">
+                    <h2>Become a Member</h2>
+                    <p>There are many benefits of being a part of the Rexburg Chamber of Commerce. Depends on your business types and purposes, we will provide different services. The price range is from $100 to $1000.</p>
+                    <h3>Non-profit ($100)</h3>
+
+                    <h3>Bronze ($200)</h3>
+
+                    <h3>Silver ($400)</h3>
+                    
+                    <h3>Gold ($1000)</h3>
+                    
+                </div>
+                <div class="join-form">
+                    <form action="confirmation.html" method="get">
+                        <fieldset>
+                            <legend>Membership Application</legend>
+                                <label for="fname" class="inline">First name: </label>
+                                <input type="text" id="fname" name="fname" placeholder="Required" required pattern="[A-Za-z]{1,}">
+                                <label for="lname" class="inline">Last name: </label>
+                                <input type="text" id="lname" name="lname" placeholder="Required" required pattern="[A-Za-z]{1,}">
+                                <label for="title" class="inline">Title: </label>
+                                <input type="text" id="title" name="title">
+                                <label for="email" class="inline">Email: </label>
+                                <input type="email" id="email" name="email" required placeholder="smi21003@gmail.com (Required)">
+                                <label for="phone" class="inline">Phone number: </label>
+                                <input type="tel" id="phone" name="phone">
+                                <label for="businessname" class="inline">Business name: </label>
+                                <input type="text" id="businessname" name="businessname" placeholder="Required" required>
+                                <label for="businessaddress" class="inline">Business address: </label>
+                                <input type="text" id="businessaddress" name="businessaddress">
+                                <label for="businessweb" class="inline">Business website: </label>
+                                <input type="url" id="businessweb" name="businessweb">
+                                <label for="business-desc">Business description:</label>
+                                <textarea name="business-desc" id="business-desc" cols="30" rows="10"></textarea>
+                                <label>Membership Type:</label>
+                                <br>
+                                <span style="white-space: nowrap;"> 
+                                <label for="nonprofit" ><input type="radio" name="membershipType" id="nonprofit" value="100">Non-profit ($100)</label>
+                                </span>
+                                <span style="white-space: nowrap;"> 
+                                <label for="bronze"><input type="radio" name="membershipType" id="bronze" value="200">Bronze ($200)</label>
+                                </span>
+                                <span style="white-space: nowrap;"> 
+                                <label for="sliver"><input type="radio" name="membershipType" id="sliver" value="400">Sliver ($400)</label>
+                                </span>
+                                <span style="white-space: nowrap;"> 
+                                <label for="gold"><input type="radio" name="membershipType" id="gold" value="1000">Gold ($1000)</label>
+                                </span>
+                        </fieldset>
+                        <input class="btm" type="submit" value="Submit">
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="contact">
+            <h1>Contact Us</h1>
+            <div class="location">
+                <h2>Location</h2>
+                <p>345 W 5th S Rexburg, ID 83440</p>
+            </div>
+            <div class="icons">
+                <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer"><img src="images/facebook-icon.png" alt="facebook icon"></a>
+                <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer"><img src="images/linkedin-icon.png" alt="linkedin icon"></a>
+                <a href="#" target="_blank" rel="noopener noreferrer"><img src="images/email-icon.png" alt="email icon"></a>
+            </div>
+            <div class="officeHour">
+                <h2>Office Hour</h2>
+                <p>From 8 a.m. to 4 p.m. Mon - Fri</p>
+                <p>208-497-8888</p>
+            </div>
+        </div>
+        
+    </main>
+
+    <footer>
+        <p>© <span class="year"></span> | Chihyang Tsao | Idaho | <a href="https://www.byui.edu/online" target="_blank">BYUI Online Learning</a></p>
+                <div class="date">test</div>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+</html>

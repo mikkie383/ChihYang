@@ -1,0 +1,66 @@
+[
+    {
+        "Name": "BookViking",
+        "Logo": "images/bookviking.png",
+        "Type": "Book store",
+        "Address": "155 W Main St #10",
+        "Phone": "(208) 359-6190",
+        "Website": "https://bookviking.com/"
+    },
+    {
+        "Name": "Righteous Slice",
+        "Logo": "images/slice.png",
+        "Type": "Pizza restaurant",
+        "Address": "175 W. 200 S#100",
+        "Phone": "(208) 820-4597",
+        "Website": "https://www.righteousslice.com/"
+    },
+    {
+        "Name": "Kiwi Loco",
+        "Logo": "images/kiwi.png",
+        "Type": "Frozen yogurt shop",
+        "Address": "160 W 2nd S",
+        "Phone": "(208) 541-2904",
+        "Website": "https://www.kiwilocoyogurt.com/66/rexburg-home/"
+    },
+    {
+        "Name": "Millhollow",
+        "Logo": "images/millhollow.PNG",
+        "Type": "Sandwich shop",
+        "Address": "48 S 1st E",
+        "Phone": "(208) 356-0847",
+        "Website": "https://www.facebook.com/Millhollow-173323709381926/?fref=ts"
+    },
+    {
+        "Name": "Family Crisis Center",
+        "Logo": "images/family-crisis.jpg",
+        "Type": "Crisis center (Non-profit)",
+        "Address": "16 E Main St",
+        "Phone": "(208) 356-0065",
+        "Website": "https://familycrisiscenter.wixsite.com/familycrisiscenter"
+    },
+    {
+        "Name": "Rexburg Free Clinic",
+        "Logo": "images/free-clinic.png",
+        "Type": "Medical clinic (Non-profit)",
+        "Address": "60 W Main St",
+        "Phone": "(208) 716-8723",
+        "Website": "https://www.rexburgfreeclinic.org/"
+    },
+    {
+        "Name": "Bountiful Place Apartments",
+        "Logo": "images/bountiful-apt.jpg",
+        "Type": "Apartment complex",
+        "Address": "345 W 5th S",
+        "Phone": "(208) 351-7080",
+        "Website": "https://www.bountifulplace.com/"
+    },
+    {
+        "Name": "Parker Insurance",
+        "Logo": "images/parker-insurance.png",
+        "Type": "Health insurance agency",
+        "Address": "12 W Main St #5",
+        "Phone": "(208) 356-0009",
+        "Website": "https://www.myidahohealth.com/"
+    }
+]

@@ -1,0 +1,56 @@
+@media only screen and (min-width: 60em) {
+  li a {
+    padding: 1.25em;
+  }
+  .ad3 img {
+    width: 259px;
+  }
+  .about-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+  .about-grid p {
+    grid-column: 1/2;
+  }
+  .about-grid img {
+    grid-column: 2/3;
+    margin: 0 auto;
+  }
+  footer {
+    display: flex;
+  }
+  footer p {
+    margin: 0;
+    margin-left: 4%;
+  }
+  .date {
+    margin-left: auto;
+    margin-right: 4%;
+  }
+  iframe {
+    width: 400px;
+  }
+  /*city page*/
+  .things {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .things h1 {
+    grid-column: 1/4;
+    grid-row: 1/2;
+  }
+  .things .volunteers {
+    grid-column: 3/4;
+    grid-row: 2/3;
+  }
+
+  /*directory*/
+  .local .listGrid section {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  }
+  .local .listGrid section img,
+  .local .listGrid section #logoImage {
+    display: revert;
+  }
+  .gridCard {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
