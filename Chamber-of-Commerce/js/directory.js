@@ -2,7 +2,7 @@ const jsonfile = "json/companies.json";
 fetch(jsonfile)
   .then((response) => response.json())
   .then((jsObject) => {
-    console.log(jsObject[0]);
+    
     let container = document.querySelector("div.listGrid");
     let section = document.createElement('section');
     let Name = document.createElement('h2');
