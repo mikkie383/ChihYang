@@ -429,6 +429,10 @@ fieldset legend {
   width: 100%;
   margin-top: 0;
 }
+.col-75 .radiobut {
+  display: block;
+  padding: 0.75rem;
+}
 label {
   padding: 12px 12px 12px 0;
 }
