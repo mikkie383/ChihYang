@@ -315,8 +315,7 @@ footer p {
   background-color: #ffdee9;
 }
 /*confirmation and thank you page*/
-.confirmmessage,
-.thankyou {
+.confirmmessage {
   text-align: center;
   color: #ffdee9;
 }
@@ -324,14 +323,21 @@ footer p {
   width: 450px;
 }
 .thankyou {
+  text-align: center;
   margin: 2%;
+  color: #850f0f;
 }
 .thankyou button {
-  font-size: 2em;
+  font-size: 1.5em;
   border-radius: 6px;
+  padding: 0.5rem 1rem;
   cursor: pointer;
   color: #850f0f;
   background-color: #ffdee9;
+}
+
+.thankyoucontainer {
+  background-color: whitesmoke;
 }
 
 /*contact page*/
