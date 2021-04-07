@@ -193,10 +193,9 @@ main {
   font-size: 1.3rem;
 }
 .about button {
-  font-size: 2rem;
+  font-size: 1.5rem;
   margin: 1.5%;
-  padding-left: 1.2%;
-  padding-right: 1.2%;
+  padding: 0.5rem 1rem;
   border-radius: 6px;
   cursor: pointer;
   color: #850f0f;
@@ -303,13 +302,16 @@ footer p {
 }
 .join-form .btm,
 .contact-info .btm {
-  font-size: 2em;
+  font-size: 1rem;
   display: block;
   margin: 0 auto;
   margin-top: 2%;
+  padding: 0.5rem 1rem;
   border-radius: 6px;
   cursor: pointer;
   color: #850f0f;
+  width: 96%;
+  max-width: 20rem;
   background-color: #ffdee9;
 }
 /*confirmation and thank you page*/
